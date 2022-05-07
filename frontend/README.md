@@ -59,7 +59,7 @@ Run-On-Local-Machine
  $ npm install
 ```
 
-* note all keys has been removed for testing on development, check the [backend]() to create an election then update the constants.js and election-data
+* note all keys has been removed for testing on development, check the [backend](https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022/tree/main/backend) to create an election then update the `constants.js` and `election-data`
 
 
 * start react scripts
