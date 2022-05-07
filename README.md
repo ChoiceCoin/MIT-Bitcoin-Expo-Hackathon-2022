@@ -20,6 +20,11 @@ We then developed a voting infrastructure using React and the Algorand JavaScrip
 
 One of the main challenges we ran into was the mathematics for voting and ensuring the software could adequately handle unit measurements in Satoshis, the smallest BTC unit. For reference, one Bitcoin is equal to 100,000,000.00 Satoshis and one Satoshi is equal to 0.00000001 BTC. But, calculating such small numbers to allow for one Satoshi to equal one vote and to coordinate those calculations with the Algorand blockchain was our key challenge in both front-end and back-end development. 
 
+# Decentralized Web Application
+
+<img width="1434" alt="Screen Shot 2022-05-07 at 12 38 34 PM" src="https://user-images.githubusercontent.com/43055154/167269706-99a52c36-1dd2-4b37-a7ed-7e4460a1b067.png">
+
+
 # MIT License
 Copyright Choice Coin 2022
 
