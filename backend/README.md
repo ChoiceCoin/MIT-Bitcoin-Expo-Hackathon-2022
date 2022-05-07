@@ -53,6 +53,86 @@ MONGODB_URI="mongodb+srv://<username>:<password>@cluster0.ntpbs.mongodb.net/myFi
 AUTHORIZATION_ID = ""
 ```
 
+## APIs
+ 
+### Create Election
+
+```
+POST /elections/create
+```
+All parameters are to be in req.body.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `address` | `string` | **Required**. vote option 1 escrow address|
+| `address` | `string` | **Required**. vote option 2 escrow address|
+
+
+- This will generate `election ID` as response that can should be updated in the `constant.js` file in the [frontend](https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022/blob/main/frontend/src/utils/constants.js),
+- Also make sure you are setting the headers as your `AUTHORIZATION-ID` in the `.env`
+
+response.body
+```bash
+      status: "success",
+      message: "Election created successfully!",
+      data: { electionId: new_election._id },
+```
+
+
+
+### Get All Results In Realtime Using Election Id
+```
+/results/:id
+```
+
+All parameters are to be in URL
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `:id` | `string` | **Required**. election ID|
+
+response.body
+```bash
+   {
+      status: "success",
+      message: "Result for election returned successfully!",
+      data: results, [] an array of election results -showing total committed assets
+   }
+```
+
+### Get Each Amount Committed to Governance
+```
+GET /committed/:address
+```
+
+All parameters are to be in URL
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `:address` | `string` | **Required**. Voter address|
+
+response.body
+```bash
+   {
+      status: "success",
+      message: "BTC committed returned successfully",
+      data: { amount: txnAmt // committed BTC amount in governance },
+    
+   }
+```
+
+### Get All Ongoing Election
+```
+GET /elections
+```
+- This will generate all ongoing elections 
+
+response.body
+```bash
+{
+    status: "success",
+    message: "All elections returned successfully",
+    data: elections, [] an array of all elections
+}
+```
+
 ## LICENSE
 
 * [MIT](https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022/blob/main/LICENSE)
