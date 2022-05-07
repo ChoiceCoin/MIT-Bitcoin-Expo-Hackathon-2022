@@ -4,6 +4,7 @@ import algosdk from "algosdk";
 import { useState} from "react";
 import "../styles/electionlist.css";
 import { useQuery } from "react-query";
+import img from '../assets/btc.png';
 import BarLoader from "react-spinners/BarLoader";
 import WalletConnect from "@walletconnect/client"; 
 import MyAlgoConnect from "@randlabs/myalgo-connect";
@@ -565,7 +566,7 @@ const MainElection = () => {
                     <div className="optionButt">
                       <div className="optionButtDets">
                         <p>Option 1</p>
-                        <p>{address1.toLocaleString()} <img src="https://i.postimg.cc/zXVqRsgH/yldyLogo.png" style={{width : '13px', marginTop : '-1px'}} alt="choice logo"/></p>
+                        <p>{address1.toLocaleString()} <img src={img} style={{width : '13px', marginTop : '-1px'}} alt="choice logo"/></p>
                       </div>
                       <div className="optRange">
                         <div
@@ -581,7 +582,7 @@ const MainElection = () => {
                     <div className="optionButt">
                       <div className="optionButtDets">
                         <p>Option 2</p>
-                        <p>{address2.toLocaleString()} <img src="https://i.postimg.cc/zXVqRsgH/yldyLogo.png" style={{width : '13px', marginTop : '-1px'}} alt="choice logo"/></p>
+                        <p>{address2.toLocaleString()} <img src={img} style={{width : '13px', marginTop : '-1px'}} alt="choice logo"/></p>
                       </div>
                       <div className="optRange">
                         <div
