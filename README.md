@@ -24,11 +24,13 @@ One of the main challenges we ran into was the mathematics for voting and ensuri
 
 <img width="1434" alt="Screen Shot 2022-05-07 at 12 38 34 PM" src="https://user-images.githubusercontent.com/43055154/167269706-99a52c36-1dd2-4b37-a7ed-7e4460a1b067.png">
 
+# Vote Results
+<img width="1207" alt="Screen Shot 2022-05-07 at 3 37 20 PM" src="https://user-images.githubusercontent.com/87402354/167274046-e5d3c4ad-15ef-4a8a-bb20-1dc24414dd8d.png">
+
 # Contrbutors
 - [Brian Haney](https://devpost.com/Bhaney44/challenges)
 - [Samuel Tosin](https://devpost.com/Samuellyworld/challenges)
 - [David Kazeem](https://devpost.com/davonjagah/challenges)
-
 
 # MIT License
 Copyright Choice Coin 2022
