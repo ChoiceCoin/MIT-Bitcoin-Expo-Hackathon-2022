@@ -3,7 +3,7 @@ import { ASSET_ID } from "../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import MyAlgoConnect from "@randlabs/myalgo-connect";
-// import { useWindowSize } from "@react-hook/window-size";
+import img from '../assets/btc.png';
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import corect from '../assets/correct.png';
 import {Link} from 'react-router-dom';
@@ -59,7 +59,7 @@ const NavBar = () => {
       const myAccountInfo = await algodClient.accountInformation(item).do();
       const bal =
         myAccountInfo.assets.find((element) => element["asset-id"] === ASSET_ID)
-          ?.amount / 100;
+          ?.amount / 100000000;
         
         
      addrArr.push({ balance: !!bal ? bal : 0, address: item });
@@ -293,7 +293,7 @@ const NavBar = () => {
                 <div className="addrDispMain">
                   <div className="addrDisplayInn">
                     <div className="addrBalance">
-                    {balance[addressNum]?.balance.toLocaleString()} <img src="https://i.postimg.cc/mDtpdjqh/logo.png" style={{width : '13px', marginTop : '0px', marginLeft : '2px'}} alt="choice logo"/>
+                    {balance[addressNum]?.balance.toLocaleString()} <img src={img} style={{width : '13px', marginTop : '0px', marginLeft : '2px'}} alt="choice logo"/>
                     </div>
 
                     <CopyToClipboard text={balance[addressNum]?.address}>
