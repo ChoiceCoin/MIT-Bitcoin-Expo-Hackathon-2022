@@ -19,10 +19,10 @@ const MainPage = () => {
           content: "",
           width: "100%",
           height: "100%",
-          opacity:  0.078,
+          opacity:  0.2,
           position: "fixed",
           pointerEvents: "none",
-          background: `url("./img/background.svg")`,
+          background: `url("https://i.postimg.cc/9fPCSh7S/bg.jpg")`,
         }}
       />
       <Scroll word={"Decentralized Voting with Bitcoin using Algorand Network!"} />
