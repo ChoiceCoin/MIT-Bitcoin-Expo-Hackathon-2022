@@ -5,7 +5,7 @@ Bitcoin Choices is a project built as part of the 2022 MIT Bitcoin Expo Hackatho
 Bitcoin Choices is a scalable voting solution for Bitcoin built by a team of developers from the Choice Coin DAO for the 2022 MIT Bitcoin Expo Hackathon.
 
 # Problem
-Bitcoin transactions have a high range and often cost hundreds or thousands of dollars to facilitate because of the high cost of energy required to validate blocks.  There exists a need for a way to securely vote with Bitcoin in a cost-efficient and timely manner to facilitate governance on the Bitcoin network. Defined, the Bitcoin governance problem is how can Bitcoin be used for fast, scalable, and secure voting with instantaneous results? 
+Bitcoin transactions have a high range and often cost hundreds or thousands of dollars to facilitate because of the high cost of energy required to validate blocks.  There exists a need for a way to securely vote with Bitcoin in a cost-efficient and timely manner to facilitate governance for the Bitcoin network. Defined, the Bitcoin governance problem is how can Bitcoin be used for fast, scalable, and secure voting with instantaneous results? 
 
 # Solution
 The solution is Bitcoin Choices, a scalable, secure, and systemic methodology for voting with collateralized Bitcoin on the Algorand blockchain.
