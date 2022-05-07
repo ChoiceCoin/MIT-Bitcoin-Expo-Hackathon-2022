@@ -1,4 +1,4 @@
-const ScrollTextLand = ({ word }) => {
+const Scroll = ({ word }) => {
   return (
     <div className="Marquee__Wrapper">
       <div className="Marquee__TextHolder">
@@ -80,4 +80,4 @@ const ScrollTextLand = ({ word }) => {
     </div>
   );
 };
-export default ScrollTextLand;
+export default Scroll;
