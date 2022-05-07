@@ -1,5 +1,4 @@
 # Bitcoin Choices
-# MIT-Bitcoin-Expo-Hackathon-2022
 Bitcoin Choices is a project built as part of the 2022 MIT Bitcoin Expo Hackathon 2022.
 
 # Summary
