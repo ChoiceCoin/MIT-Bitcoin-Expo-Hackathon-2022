@@ -1,0 +1,19 @@
+{
+  "name": "governance-rewards",
+  "version": "1.0.0",
+  "description": "Governance rewards in the Choice Coin Asset for goBTC voters in the Charity Allocation Decision making proccess",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022.git"
+  },
+  "author": "Kazeem David, Samuel Aspirin, Brian Haney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022/issues"
+  },
+  "homepage": "https://github.com/ChoiceCoin/MIT-Bitcoin-Expo-Hackathon-2022#readme"
+}
