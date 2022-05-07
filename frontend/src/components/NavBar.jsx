@@ -1,9 +1,9 @@
 import algosdk from "algosdk";
-import { ASSET_ID } from "./constants";
+import { ASSET_ID } from "../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import MyAlgoConnect from "@randlabs/myalgo-connect";
-import { useWindowSize } from "@react-hook/window-size";
+// import { useWindowSize } from "@react-hook/window-size";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import corect from '../assets/correct.png';
 import {Link} from 'react-router-dom';
@@ -277,7 +277,7 @@ const NavBar = () => {
             textTransform: "uppercase",
           }}
         >
-          <img src="https://i.postimg.cc/cHvpYxSb/bitcoin.png" style={{width: "70px"}} />
+          <img src="https://i.postimg.cc/cHvpYxSb/bitcoin.png" style={{width: "70px"}} alt="logo" />
         </Link>
 
         <div

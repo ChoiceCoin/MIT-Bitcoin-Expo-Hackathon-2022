@@ -2,7 +2,7 @@ import $ from "jquery";
 import axios from "axios";
 import algosdk from "algosdk";
 import { useState} from "react";
-import "../styles/electionlist.css";
+import "../styles/mainelection.css";
 import { useQuery } from "react-query";
 import img from '../assets/btc.png';
 import BarLoader from "react-spinners/BarLoader";
@@ -11,7 +11,8 @@ import MyAlgoConnect from "@randlabs/myalgo-connect";
 import { useDispatch, useSelector } from "react-redux";
 import { formatJsonRpcRequest } from "@json-rpc-tools/utils";
 import QRCodeModal from "algorand-walletconnect-qrcode-modal";
-import { ASSET_ID,CHOICE_ID, ELECTION_ID, URL, ADDRESS_1, ADDRESS_2 } from "./constants";
+import { ASSET_ID,CHOICE_ID, ELECTION_ID, URL, ADDRESS_1, ADDRESS_2 } from "../utils/constants";
+import { waitForConfirmation } from "../utils/algorand-vote-confirmation";
 
 
 const MainElection = () => {
@@ -63,7 +64,7 @@ const MainElection = () => {
         " This Issue has two options.",
       // choice_per_vote: 1,
       process_image: "https://i.postimg.cc/pXn0NRzL/logo.gif",
-      title: "Bitcoin Voting",
+      title: "Choice Coin: Bitcoin Choices",
     },
   ];
 
@@ -167,10 +168,23 @@ const MainElection = () => {
 
     
 
-    await algodClient.sendRawTransaction(SignedTx).do();
+   const resp = await algodClient.sendRawTransaction(SignedTx).do();
     dispatch({
       type: "close_wallet"
     })
+
+  if(resp) {
+    //wait for confirmation
+    dispatch({
+      type: "confirm_wallet",
+      alertContent : "Sending to Algorand Blockchain"
+    })
+    waitForConfirmation(algodClient,resp.txId);
+  }
+  dispatch({
+    type: "close_wallet"
+  })
+   
       // alert success
       dispatch({
         type: "alert_modal",
@@ -203,7 +217,6 @@ const MainElection = () => {
   const algoSignerConnect = async (voteData) => {
     try {
    
-
         const address = !!isThereAddress && isThereAddress 
 
         const myAccountInfo = await algodClient
@@ -213,7 +226,6 @@ const MainElection = () => {
           .do();
 
         
-
         // check if the voter address has Choice
         const containsChoice = myAccountInfo.assets
           ? myAccountInfo.assets.some(
@@ -297,12 +309,26 @@ const MainElection = () => {
         });
      
 
-        await algodClient
+      const resp=  await algodClient
           .sendRawTransaction(SignedTx).do();
 
           dispatch({
             type: "close_wallet"
           })
+      
+        if(resp) {
+          //wait for confirmation
+          dispatch({
+            type: "confirm_wallet",
+            alertContent : "Sending to Algorand Blockchain"
+          })
+          waitForConfirmation(algodClient,resp.txId);
+        }
+        dispatch({
+          type: "close_wallet"
+        })
+         
+        
 
         // alert success
         dispatch({
@@ -424,12 +450,23 @@ const MainElection = () => {
       });
 
    
-     await algodClient.sendRawTransaction(decodedResult).do();
+    const resp = await algodClient.sendRawTransaction(decodedResult).do();
      dispatch({
       type: "close_wallet"
     })
 
-
+  if(resp) {
+    //wait for confirmation
+    dispatch({
+      type: "confirm_wallet",
+      alertContent : "Sending to Algorand Blockchain"
+    })
+    waitForConfirmation(algodClient,resp.txId);
+  }
+  dispatch({
+    type: "close_wallet"
+  })
+   
       // alert success
       dispatch({
         type: "alert_modal",

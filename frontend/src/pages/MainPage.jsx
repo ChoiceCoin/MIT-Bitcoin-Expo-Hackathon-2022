@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import ScrollTextLand from "../components/ScrollTextLand";
+import Scroll from "../components/Scroll";
 
 import MainElection from "../components/Main-Election";
 
@@ -25,7 +25,7 @@ const MainPage = () => {
           background: `url("./img/background.svg")`,
         }}
       />
-      <ScrollTextLand word={"Decentralized Voting with Bitcoin using Algorand Network!"} />
+      <Scroll word={"Decentralized Voting with Bitcoin using Algorand Network!"} />
       <NavBar />
 
         <MainElection />
