@@ -10,6 +10,16 @@ Bitcoin transactions have a high range and often cost hundreds or thousands of d
 # Solution
 The solution is Bitcoin Choices, a scalable, secure, and systemic methodology for voting with collateralized Bitcoin on the Algorand blockchain.
 
+# How we built it
+
+We built Bitcoin Choices using the Algorand blockchain as a scaling solution. The software also leverages AlgoMint, which is a software for creating collateralized Bitcoin on Algorand. By collateralizing Bitcoin on Algorand, BTC transactions become faster and less expensive. 
+
+We then developed a voting infrastructure using React and the Algorand JavaScript-SDK to create a voting interface that allows users to connect their wallets and vote. The votes are then aggregated on the blockchain and recorded in real time. After the voting period concludes, we wrote a smart contract that reads all the voting data from the blockchain and returns any Bitcoin used for voting, plus a proportional reward from a pool.
+
+# Challenges we faced
+
+One of the main challenges we ran into was the mathematics for voting and ensuring the software could adequately handle unit measurements in Satoshis, the smallest BTC unit. For reference, one Bitcoin is equal to 100,000,000.00 Satoshis and one Satoshi is equal to 0.00000001 BTC. But, calculating such small numbers to allow for one Satoshi to equal one vote and to coordinate those calculations with the Algorand blockchain was our key challenge in both front-end and back-end development. 
+
 # MIT License
 Copyright Choice Coin 2022
 
