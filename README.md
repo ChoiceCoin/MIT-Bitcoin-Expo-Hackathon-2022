@@ -29,9 +29,9 @@ One of the main challenges we ran into was the mathematics for voting and ensuri
 <img width="1207" alt="Screen Shot 2022-05-07 at 3 37 20 PM" src="https://user-images.githubusercontent.com/87402354/167274046-e5d3c4ad-15ef-4a8a-bb20-1dc24414dd8d.png">
 
 # Contrbutors
-- [Brian Haney](https://devpost.com/Bhaney44/challenges)
-- [Samuel Tosin](https://devpost.com/Samuellyworld/challenges)
-- [David Kazeem](https://devpost.com/davonjagah/challenges)
+- [Brian Haney](https://devpost.com/Bhaney44)
+- [Samuel Tosin](https://devpost.com/Samuellyworld)
+- [David Kazeem](https://devpost.com/davonjagah)
 
 # White Paper
 SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4103448
