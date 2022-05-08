@@ -1,8 +1,8 @@
 # Bitcoin Choices
-Bitcoin Choices is a project built as part of the 2022 MIT Bitcoin Expo Hackathon 2022.
+Bitcoin Choices is a project built as part of the 2022 MIT Bitcoin Expo Hackathon 2022. MIT Bitcoin Expo Website: https://www.mitbitcoinexpo.org/
 
 # Summary
-Bitcoin Choices is a scalable voting solution for Bitcoin built by a team of developers from the Choice Coin DAO for the 2022 MIT Bitcoin Expo Hackathon. DevPost Submission: https://devpost.com/software/choice-coin-bitcoin-choices
+Bitcoin Choices is a scalable voting solution for Bitcoin built by a team of developers from the Choice Coin DAO for the 2022 MIT Bitcoin Expo Hackathon. DevPost Submission: https://devpost.com/software/choice-coin-bitcoin-choices 
 
 # Video Demo
 
