@@ -9,7 +9,7 @@ Bitcoin Choices is a scalable voting solution for Bitcoin built by a team of dev
 YouTube: https://www.youtube.com/watch?v=bRQe6bZcgT0
 
 # Problem
-Bitcoin transactions have a high range and often cost hundreds or thousands of dollars to facilitate because of the high cost of energy required to validate blocks.  There exists a need for a way to securely vote with Bitcoin in a cost-efficient and timely manner to facilitate governance for the Bitcoin network. Defined, the Bitcoin governance problem is how can Bitcoin be used for fast, scalable, and secure voting with instantaneous results? 
+Bitcoin transactions take a long time and often cost hundreds or thousands of dollars to facilitate because of the high cost of energy required to validate blocks.  There exists a need for a way to securely vote with Bitcoin in a cost-efficient and timely manner to facilitate governance for the Bitcoin network. Defined, the Bitcoin governance problem is how can Bitcoin be used for fast, scalable, and secure voting with instantaneous results? 
 
 # Solution
 The solution is Bitcoin Choices, a scalable, secure, and systemic methodology for voting with collateralized Bitcoin on the Algorand blockchain. We launched a new [web application](https://bitcoin-choices.com) to facilitate a DAO vote. You can read more about the Issue and options for the vote in our blog here: https://medium.com/@ChoiceCoin/choice-coin-bitcoin-choices-6218ee5993d7
